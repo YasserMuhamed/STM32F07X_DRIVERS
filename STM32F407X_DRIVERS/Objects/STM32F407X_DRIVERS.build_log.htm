@@ -1,0 +1,181 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yasser mohamed, electronics, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.27.1.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      UL2CM3.DLL V1.162.15.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\WORK\EMBEDDED SYSTEMS\STM32F407X_DRIVERS\STM32F407X_DRIVERS.uvprojx
+Project File Date:  05/30/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling i2c_main.c...
+i2c.h(185): warning:  #1-D: last line of file ends without a newline
+  #endif
+i2c_main.h(41): warning:  #1-D: last line of file ends without a newline
+  #define MASTER_READ_CMD					1
+i2c_main.c(7): error:  #65: expected a ";"
+  	uint8_t master_rx_buffer[5];
+i2c_main.c(39): warning:  #550-D: variable "i2c_sda"  was set but never used
+  	GPIO_PIN_CONF_T i2c_scl,i2c_sda;
+i2c_main.c(78): warning:  #223-D: function "hal_i2c_handle_evt_interrupt" declared implicitly
+  	hal_i2c_handle_evt_interrupt(&i2c_handle);
+i2c_main.c(163): warning:  #223-D: function "memset" declared implicitly
+  		memset(master_rx_buffer,0,5);
+i2c_main.c(163): error:  #20: identifier "master_rx_buffer" is undefined
+  		memset(master_rx_buffer,0,5);
+i2c_main.c(91): warning:  #177-D: variable "val1"  was declared but never referenced
+  	uint32_t val1;
+i2c_main.c(92): warning:  #177-D: variable "slave_data_len"  was declared but never referenced
+  	uint32_t slave_data_len;
+i2c_main.c(247): error: At end of source:  #67: expected a "}"
+i2c_main.c: 7 warnings, 3 errors
+compiling led.c...
+compiling main.c...
+main.c(31): warning:  #111-D: statement is unreachable
+  	return 0 ; 
+main.c: 1 warning, 0 errors
+compiling i2c.c...
+i2c.h(185): warning:  #1-D: last line of file ends without a newline
+  #endif
+i2c.c(9): warning:  #550-D: variable "tmpreg"  was set but never used
+  	uint32_t tmpreg;
+i2c.c(40): error:  #20: identifier "I2C_ADDMODE_10BIT" is undefined
+  	if(adr_mode==I2C_ADDMODE_10BIT)
+i2c.c(137): warning:  #550-D: variable "tmpreg"  was set but never used
+  	uint32_t tmpreg;
+i2c.c(533): warning:  #1-D: last line of file ends without a newline
+  }
+i2c.c(114): warning:  #177-D: function "is_bus_busy"  was declared but never referenced
+  static uint32_t is_bus_busy(I2C_TypeDef *i2cx)
+i2c.c(74): warning:  #177-D: function "hal_i2c_generate_stop_condition"  was declared but never referenced
+  static void hal_i2c_generate_stop_condition(I2C_TypeDef *i2cx)
+i2c.h(157): warning:  #2816-D: static function "hal_i2c_configure_ccr"  treated as extern because it was referenced but not defined
+  static void 		hal_i2c_configure_ccr(I2C_TypeDef *i2cx,uint32_t pclk,uint32_t clkspeed,uint32_t duty_cycle);
+i2c.h(158): warning:  #2816-D: static function "hal_i2c_rise_time_configuration"  treated as extern because it was referenced but not defined
+  static void 		hal_i2c_rise_time_configuration(I2C_TypeDef *i2cx,uint32_t pclk,uint32_t clkspeed);
+i2c.c(62): warning:  #177-D: function "hal_i2c_clk_init"  was declared but never referenced
+  static void hal_i2c_clk_init(I2C_TypeDef *i2cx,uint32_t clkspeed,uint32_t duty_cycle)
+i2c.c(50): warning:  #177-D: function "hal_i2c_set_fm_duty_cycle"  was declared but never referenced
+  static void hal_i2c_set_fm_duty_cycle(I2C_TypeDef *i2cx,uint32_t duty_cycle)
+i2c.c(38): warning:  #177-D: function "hal_i2c_set_addressing_mode"  was declared but never referenced
+  static void hal_i2c_set_addressing_mode(I2C_TypeDef *i2cx,uint32_t adr_mode)
+i2c.c(14): warning:  #177-D: function "hal_i2c_disable_peripheral"  was declared but never referenced
+  static void hal_i2c_disable_peripheral(I2C_TypeDef *i2cx)
+i2c.c(19): warning:  #177-D: function "hal_i2c_manage_clock_stretch"  was declared but never referenced
+  static void hal_i2c_manage_clock_stretch(I2C_TypeDef *i2cx,uint32_t no_stretch)
+i2c.c(31): warning:  #177-D: function "hal_i2c_set_own_address1"  was declared but never referenced
+  static void hal_i2c_set_own_address1(I2C_TypeDef *i2cx,uint32_t own_address)
+i2c.c(256): warning:  #177-D: function "hal_i2c_master_handle_TXE_interrupt"  was declared but never referenced
+  static void hal_i2c_master_handle_TXE_interrupt(i2c_handle_t	*hi2c)
+i2c.c(272): warning:  #177-D: function "hal_i2c_master_tx_handle_btf"  was declared but never referenced
+  static void hal_i2c_master_tx_handle_btf(i2c_handle_t	*hi2c)
+i2c.c(301): warning:  #177-D: function "hal_i2c_slave_handle_stop_condition"  was declared but never referenced
+  static void hal_i2c_slave_handle_stop_condition(i2c_handle_t *hi2c)
+i2c.c(316): warning:  #177-D: function "hal_i2c_slave_tx_handle_btf"  was declared but never referenced
+  static void hal_i2c_slave_tx_handle_btf(i2c_handle_t *hi2c)
+i2c.c(337): warning:  #177-D: function "hal_i2c_slave_handle_RXNE_interrupt"  was declared but never referenced
+  static void hal_i2c_slave_handle_RXNE_interrupt(i2c_handle_t *hi2c)
+i2c.c(327): warning:  #177-D: function "hal_i2c_slave_rx_handle_btf"  was declared but never referenced
+  static void hal_i2c_slave_rx_handle_btf(i2c_handle_t *hi2c)
+i2c.c: 20 warnings, 1 error
+compiling gpio.c...
+compiling spi.c...
+spi.h(141): warning:  #1-D: last line of file ends without a newline
+  #endif
+spi.c(136): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint32_t i =0 , val;
+spi.c(136): warning:  #177-D: variable "val"  was declared but never referenced
+  	uint32_t i =0 , val;
+spi.c(153): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint32_t i =0 , val;
+spi.c(153): warning:  #550-D: variable "val"  was set but never used
+  	uint32_t i =0 , val;
+spi.c(226): warning:  #1-D: last line of file ends without a newline
+  }
+spi.c(9): warning:  #177-D: function "hal_spi_disable"  was declared but never referenced
+  static void hal_spi_disable(SPI_TypeDef *SPIx)
+spi.c(69): warning:  #177-D: function "hal_spi_configure_nss_master"  was declared but never referenced
+  static void hal_spi_configure_nss_master(SPI_TypeDef *SPIx,uint32_t ssm_enable)
+spi.c: 8 warnings, 0 errors
+assembling startup_stm32f407xx.s...
+compiling uart.c...
+uart.h(126): warning:  #1-D: last line of file ends without a newline
+  #endif 
+uart.c(140): warning:  #550-D: variable "val"  was set but never used
+  	uint32_t val;
+uart.c(159): warning:  #550-D: variable "tmpreg"  was set but never used
+  	uint32_t tmpreg=0x00;
+uart.c(207): error:  #20: identifier "UART_PARITY_NONE" is undefined
+  if (huart->Init.Parity==UART_PARITY_NONE)
+uart.c(210): error:  #18: expected a ")"
+  *huart->pRxBuffPtr++=(uint8_t)(huart->Instance->DR &(uint8_t 0x00FF);
+uart.c(210): error:  #29: expected an expression
+  *huart->pRxBuffPtr++=(uint8_t)(huart->Instance->DR &(uint8_t 0x00FF);
+uart.c(210): error:  #18: expected a ")"
+  *huart->pRxBuffPtr++=(uint8_t)(huart->Instance->DR &(uint8_t 0x00FF);
+uart.c(236): error:  #65: expected a ";"
+  {
+uart.c(262): warning:  #12-D: parsing restarts here after previous syntax error
+  	tmp1=huart->Instance->SR & USART_REG_SR_TC_FLAG;
+uart.c(263): error:  #20: identifier "tmp2" is undefined
+  	tmp2=huart->Instance->CR3 & USART_REG_CR1_TCIE_INT_EN;
+uart.c(280): error: At end of source:  #67: expected a "}"
+uart.c(180): warning:  #177-D: function "hal_uart_handle_TXE_interrupt"  was declared but never referenced
+  static void hal_uart_handle_TXE_interrupt(uart_handle_t *huart)
+uart.c: 5 warnings, 7 errors
+compiling system_stm32f4xx.c...
+".\Objects\STM32F407X_DRIVERS.axf" - 11 Error(s), 41 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil.STM32F4xx_DFP.2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.2
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Yasser\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Users\Yasser\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+
+   * Component: Keil::Device:Startup:2.6.2
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:19
+</pre>
+</body>
+</html>

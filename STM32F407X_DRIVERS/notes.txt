@@ -1,0 +1,22 @@
+
+
+
+#define PORTA_BASE_ADDRESS 0X00000
+#define PORTA	PORTA_BASE_ADDRESS 
+
+typedef struct 
+{
+uint32_t  	IDR ;
+uint32_t 	ODR ;
+...
+}GPIO_t;
+
+
+#define GPIOA	((GPIO_t*)PORTA);
+
+
+
+//forward declaration to all exposed APIs...
+
+
+read / write / speed / clock / isr / 
